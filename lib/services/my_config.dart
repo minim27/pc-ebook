@@ -13,6 +13,6 @@ class MyConfig {
     return url;
   }
 
-  static const localDBName = "vec_dkdsndr.db";
+  static const localDBName = "pc_ebook.db";
   static const localDBVer = 1;
 }
