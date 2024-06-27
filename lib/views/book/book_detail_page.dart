@@ -35,17 +35,6 @@ class _BookDetailPageState extends State<BookDetailPage> {
   @override
   Widget build(BuildContext context) {
     return MyScaffold(
-      backgroundColor: MyColors.grey2,
-
-      // extendBodyBehindAppBar: true,
-      // appBar: AppBar(
-      //   backgroundColor: Colors.transparent,
-      //   title: const MyText(
-      //     text: "Book Detail",
-      //     fontSize: 16,
-      //     fontWeight: FontWeight.w500,
-      //   ),
-      // ),
       body: Container(
         decoration: const BoxDecoration(gradient: MyColors.linearHor),
         child: Obx(() {
