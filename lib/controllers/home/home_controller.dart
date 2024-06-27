@@ -201,14 +201,15 @@ class HomeController extends GetxController {
         query:
             '''insert into ${LDBFavoriteTable.tableName} (${LDBFavoriteTable.bookId}) values(${res.id})''',
       );
-      favC.res.add(res);
+      // favC.res.add(res);
     } else {
       await LDBSQLQuery.sqlQuery(
         query:
             '''delete from ${LDBFavoriteTable.tableName} where ${LDBFavoriteTable.bookId} = ${res.id}''',
       );
-      favC.res.removeWhere((item) => item.id == res.id);
+      // favC.res.removeWhere((item) => item.id == res.id);
     }
+    favC.fetchApi(isRefresh: true);
   }
 
   _setFavoriteInList({required RxList<BooksModel> res, required int id}) async {

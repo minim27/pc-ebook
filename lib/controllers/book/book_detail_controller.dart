@@ -52,14 +52,15 @@ class BookDetailController extends GetxController {
         query:
             '''insert into ${LDBFavoriteTable.tableName} (${LDBFavoriteTable.bookId}) values(${resBook.id})''',
       );
-      favC.res.add(resBook);
+      // favC.res.add(resBook);
     } else {
       await LDBSQLQuery.sqlQuery(
         query:
             '''delete from ${LDBFavoriteTable.tableName} where ${LDBFavoriteTable.bookId} = ${resBook.id}''',
       );
-      favC.res.removeWhere((item) => item.id == resBook.id);
+      // favC.res.removeWhere((item) => item.id == resBook.id);
     }
+    favC.fetchApi(isRefresh: true);
   }
 
   _setFavoriteInList({required RxList<BooksModel> res, required int id}) async {

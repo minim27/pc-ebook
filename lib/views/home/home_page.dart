@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:pc_book_dika_desandra_ardiansyah/controllers/home/home_controller.dart';
 import 'package:pc_book_dika_desandra_ardiansyah/utils/my_colors.dart';
 import 'package:pc_book_dika_desandra_ardiansyah/utils/my_icons.dart';
-import 'package:pc_book_dika_desandra_ardiansyah/utils/my_images.dart';
 import 'package:pc_book_dika_desandra_ardiansyah/widgets/my_text.dart';
 
 import '../../controllers/favorite/favorite_controller.dart';
@@ -349,12 +348,14 @@ class Header extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 100),
-              SizedBox(
+              Container(
                 width: 60,
                 height: 60,
-                child: ClipOval(
-                  child: Image.asset(MyImages.imgAva, fit: BoxFit.cover),
+                decoration: BoxDecoration(
+                  color: MyColors.primary.withOpacity(0.1),
+                  shape: BoxShape.circle,
                 ),
+                child: Image.asset(MyIcons.icPalm, scale: 18),
               )
             ],
           ),

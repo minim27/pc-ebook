@@ -115,10 +115,8 @@ class _FavoritePageState extends State<FavoritePage> {
                           downloadCount: favC.res[index].downloadCount,
                           onTap: () => favC
                               .openBookDetail(id: favC.res[index].id)
-                              .then(
-                                  (value) => favC.fetchApi(isRefresh: true)),
-                          onFav: () =>
-                              favC.setFavorite(id: favC.res[index].id),
+                              .then((value) => favC.fetchApi(isRefresh: true)),
+                          onFav: () => favC.setFavorite(id: favC.res[index].id),
                         ),
                       ),
                       Visibility(
