@@ -22,17 +22,14 @@ Future<dynamic> getBooks({
     if (search != "" && search != null) "search": search,
   };
 
-  print("uri: $body");
-
   Uri uri = Uri.parse("${MyConfig.apiURL}/books");
   final newUri = uri.replace(queryParameters: body);
-  print("uri: $newUri");
+
   final response = await http.get(newUri).timeout(
         const Duration(minutes: 5),
         onTimeout: () => http.Response("Error Connection", 408),
       );
 
-  print("uri: ${response.statusCode}");
   if (response.statusCode == 200) {
     dynamic responseData = json.decode(response.body);
 
