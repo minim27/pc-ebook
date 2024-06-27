@@ -1,16 +1,26 @@
-# pc_book_dika_desandra_ardiansyah
+# Palm Code E-Book
 
-A new Flutter project.
+This project is a simple app for a reading e-book built with Flutter. It is designed to provide new users with a seamless and welcoming experience as they start using the app.
+
+## Features
+
+- Clear and concise instructions for new users
+- Responsive design that works on both iOS and Android devices
+- Easy navigation through the onboarding steps
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get a local copy of the project up and running, follow these simple steps.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Ensure you have the following software installed on your machine:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Git](https://git-scm.com/)
+- [Flutter](https://flutter.dev/docs/get-started/install)
+
+### Installation
+
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/minim27/pc-ebook.git
