@@ -24,3 +24,29 @@ Ensure you have the following software installed on your machine:
 1. **Clone the repository**
    ```sh
    git clone https://github.com/minim27/pc-ebook.git
+
+2. **Navigate to the project directory**
+    ```sh
+    cd pc-ebook
+
+3. **Install dependencies**
+    ```sh
+    flutter pub get
+
+4. **Run the app**
+    ```sh
+    flutter run
+
+## Contributing
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
+
+## Contact
+@minim27 - dika.naxbakrie33@gmail.com
+
+Project Link: https://github.com/minim27/pc-ebook
